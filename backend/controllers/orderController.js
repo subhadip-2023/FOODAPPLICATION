@@ -6,7 +6,7 @@ import Stripe from "stripe";
 
 const stripe = new Stripe('sk_test_51Pht4TADXqZRKBXAdwA6IntASJEukdJdrSzNybCzzdrKDzQ5i6B6UavsEaGm6nfzi0rjdYMkv53d8zpyIu0MzEjz00Jx4n4idn');
 // console.log(process.env.STRIPE_SECRET_KEY);
-const frontend_url = "http://localhost:5173";
+const frontend_url = "https://food-arena.onrender.com/";
 const placeOrder = async (req,res)=>{
     try {
         const newOrder = new orderModel({
