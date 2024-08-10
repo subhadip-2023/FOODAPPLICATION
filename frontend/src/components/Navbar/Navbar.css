@@ -83,6 +83,36 @@
 .navbar-profile-dropdown li:hover{
   color: tomato;
 }
+.Join-us-profile{
+  position: relative;
+}
+.Join-us-profile-dropdown{
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+.Join-us-profile:hover .Join-us-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff2ef;
+  padding: 12px 25px;
+  border-radius: 4px;
+  list-style-type: none;
+  outline: 2px solid white;
+  border: 1px solid tomato;
+  margin-top: 10px;
+}
+.Join-us-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.Join-us-profile-dropdown li:hover{
+  color: tomato;
+}
 @media (max-width: 1050px) {
   .navbar .logo {
     width: 140px;
